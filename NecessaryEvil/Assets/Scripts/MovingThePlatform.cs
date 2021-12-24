@@ -29,6 +29,7 @@ public class MovingThePlatform : MonoBehaviour
         {
             goingRight = false;
             //transform.Translate(-movementSpeed * Time.deltaTime, 0, 0);
+            
         }
         if (startX-this.transform.position.x >= numberOfTilesToMoveX)
         {
