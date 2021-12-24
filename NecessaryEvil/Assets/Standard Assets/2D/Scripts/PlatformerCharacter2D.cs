@@ -30,7 +30,29 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            
+            Debug.Log(collision.gameObject.tag);
+            if (collision.gameObject.tag == "MovingPlatform")
+            {
+                transform.parent = collision.transform;
+                Debug.Log("triggered");
 
+            }
+        }
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+
+            // Debug.Log(collision.gameObject.tag);
+            if (collision.gameObject.tag == "MovingPlatform")
+            {
+                transform.parent = null;
+                Debug.Log("triggered");
+
+            }
+        }
+        
 
         private void FixedUpdate()
         {
