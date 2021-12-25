@@ -1106,10 +1106,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_audioClip: {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -1686,9 +1686,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Jump
-    clip: {fileID: 8300000, guid: 5c6a9ffa4c1976b45a08c5be991fa6b8, type: 3}
+    clip: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 1.5
     source: {fileID: 0}
 --- !u!4 &2064169122
 Transform:
