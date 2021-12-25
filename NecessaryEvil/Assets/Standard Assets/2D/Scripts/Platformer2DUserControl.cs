@@ -28,6 +28,7 @@ namespace UnityStandardAssets._2D
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 
                 
+                
 
                
             }

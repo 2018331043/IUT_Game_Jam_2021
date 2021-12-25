@@ -17,10 +17,10 @@ public class CameraFolllow : MonoBehaviour
     {
         camHeight = Camera.main.orthographicSize * 2;
         camWidth = camHeight * Camera.main.aspect;
-        float leftBoundsWidth = leftBounds.GetComponentInChildren<SpriteRenderer>().bounds.size.x / 2;
-        float rightBoundsWidth = rightBounds.GetComponentInChildren<SpriteRenderer>().bounds.size.x / 2;
-        levelMinx = leftBounds.position.x + leftBoundsWidth + (camWidth / 2);
-        levelMaxX = rightBounds.position.x - leftBoundsWidth - (camWidth / 2);
+       
+
+        levelMinx = leftBounds.position.x+(camWidth/2);
+        levelMaxX = rightBounds.position.x - (camWidth / 2);
 
 
     }
